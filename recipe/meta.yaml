@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-imap" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-imap-{{ version }}.tar.gz
-  sha256: 33a0a2e7cade8c7aa71c6861aad2229b4f36deab77e3416f34958b388d7ad6ee
+  sha256: c71a384ac89a2e6930fee1bc85d1e241524c0d5ff7fe0d59365362cbb35b5088
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -33,10 +33,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Internet Message Access Protocol (IMAP) for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-imap package
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-imap/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
