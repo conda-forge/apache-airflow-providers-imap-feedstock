@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-imap" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-imap-{{ version }}.tar.gz
-  sha256: 40bac2a75e4dfbcd7d397776d90d03938facaf2707acc6cc119a8db684e53f77
+  sha256: 3853c54f71d48f8f7417c154168a99c5b999babf0695dc814bba99cb2aa61a1f
 
 build:
   noarch: python
