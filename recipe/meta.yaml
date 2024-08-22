@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-imap" %}
-{% set version = "3.6.1" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 20e8052b43f32c3e711cbe0ffe3763cf550ffb06011ed4c57c3e806dd99dfa06
+  sha256: b3fae432280a07c9bd9f05eed5b500a6c080905c1403df342305e798dcf87754
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.7.0
+    - apache-airflow >=2.8.0
 
 test:
   imports:
