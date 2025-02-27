@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_imap-{{ version }}.tar.gz
   sha256: 65e357ba65c20676f13d5a672d40d69d2b88915041ea4658c3aa711e45742705
 
 build:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-imap for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/imap/LICENSE
+  license_file: src/airflow/providers/imap/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-imap/stable/index.html
   dev_url: https://github.com/apache/airflow/
