@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-imap
-  version: 3.10.3
+  version: "3.10.3"
 
 package:
   name: ${{ name|lower }}
@@ -24,10 +24,11 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
+
 tests:
   - python:
       imports:
-        - airflow.providers.imap
+      - airflow.providers.imap
       pip_check: true
       python_version: ${{ python_min }}.*
 
