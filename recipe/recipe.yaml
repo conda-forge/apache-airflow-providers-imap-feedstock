@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-imap
-  version: "3.11.2"
+  version: "3.11.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_imap-${{ version }}.tar.gz
-  sha256: df218fc9589be029db1d9440f21ff1e58b107a9c7e60c157160f68ebe7642d67
+  sha256: d137916e4a3da3cc820cdb3e281b4a933556b5f334f6180b9df37721fc0799f2
 
 build:
   noarch: python
